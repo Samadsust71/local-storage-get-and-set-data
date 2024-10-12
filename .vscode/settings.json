@@ -1,0 +1,7 @@
+{
+    "editor.linkedEditing": true,
+    "auto-rename-tag.activationOnLanguage": [
+        
+        "*"
+    ]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+  </head>
+  <style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+     .products{
+       
+        display: flex;
+        
+        gap: 100px;
+        justify-content: center;
+
+     }
+  </style>
+  <body>
+    <div>
+      <input id="product-name" type="text" placeholder="Product name" />
+      <input
+        id="product-quantity"
+        type="number"
+        min="1"
+        value="1"
+        placeholder="quantity"
+      />
+      <button onclick="addProducts()">Add</button>
+     <section class="products">
+        <div>
+            <h1>All Product</h1>
+            <ul id="product-container"></ul>
+          </div>
+          <div>
+            <h1>Cart Items</h1>
+            <ul id="cart-container"></ul>
+          </div>
+     </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
